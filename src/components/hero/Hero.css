@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "WS";
+  src: url("./fonts/WS.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "WS";
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.backGroundVideo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.presentation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cc9544;
+  font-size: 400%;
+}
+
+.direction {
+  border: solid #1c0a00;
+  text-align: center;
+  color: #cc9544;
+  text-decoration: none;
+  padding: 2.5%;
+  width: 25%;
+  margin-top: 3%;
+  font-size: 75%;
+}
+
+#arrowRight {
+  vertical-align: middle;
+}
+
+#arrowDown {
+  vertical-align: middle;
+}
+
+.direction:hover {
+  background-color: #1c0a00bd;
+  text-decoration: none;
+}
+.direction:hover #arrowRight {
+  display: none;
+}
+.direction #arrowDown {
+  display: none;
+}
+.direction:hover #arrowDown {
+  display: inline;
+}
+
+.PlayBtn {
+  z-index: 10;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-family: "WS";
+  font-size: 100%;
+  border: solid #1c0a00;
+  text-align: center;
+  color: #cc9544;
+  text-decoration: none;
+  padding: 0.5%;
+  background-color: #1c0a0000;
+  width: 7%;
+}
+.PlayBtn:hover {
+  background-color: #1c0a00bd;
+  text-decoration: none;
+}

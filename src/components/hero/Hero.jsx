@@ -2,24 +2,35 @@ import React from "react";
 import "./Hero.css";
 import Container from "react-bootstrap/Container";
 import fire from "./img/fire.mp4";
+import { FaArrowDown, FaArrowRight } from "react-icons/fa";
+// import Button from 'react-bootstrap/Button';
+
+
 
 const Hero = () => {
   return (
     <Container fluid className="Hero">
-      <video autoPlay muted loop>
+      <video autoPlay muted loop className="backGroundVideo">
         <source src={fire} type="video/mp4" />
       </video>
 
-      <div className="text">
-      <p>Hello, i'm Gastón Einschlag</p>
-      <p>I am a full-stack web developer</p>
-      <p><a id="button" href="#navbar">More about me <i id="arrowrigth" class='fa fa-arrow-right'></i><i id="arrowdown"
-            class='fa fa-arrow-down'></i></a></p>
-    </div>
+      <Container fluid className="presentation">
+        <p>Hello, i'm Gastón Einschlag</p>
+        <p>I am a full-stack web developer</p>
 
-    <button id="playPauseBtn" onclick="playPause()">Pause</button>
+        <a className="direction" href="#navbar">
+          <span>More about me </span>
+          <FaArrowRight id="arrowRight" />
+          <FaArrowDown id="arrowDown" />
+        </a>
+
+      </Container>
+
+      {/* <Button className = "PlayBtn"> Pause</Button> */}
+
     </Container>
   );
 };
 
 export default Hero;
+
