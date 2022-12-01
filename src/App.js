@@ -1,16 +1,24 @@
-import './App.css';
-import Hero from './components/hero/Hero.jsx'
-import Contact from './components/contact/Contact.jsx';
+import React from "react";
+import { Routes, Route, BrowserRouter, } from "react-router-dom";
+import Hero from "./components/Hero/Hero.jsx";
+import Contact from "./components/Contact/Contact.jsx"
+import AboutMe from "./components/AboutMe/AboutMe.jsx";
 
 
 function App() {
   return (
-    <div className="App">
-    < Hero />
+    
+      
+      
+      <Routes>
+      <Route path="*" element= { <Hero /> } /> 
+      
+      <Route path = "/AboutMe" element = {<AboutMe />} />
 
-    <Contact/>    
-
-    </div>
+      <Route path ="/Contact" element = {<Contact />} />
+      </Routes>
+    
+      
   );
 }
 

@@ -1,6 +1,7 @@
 @font-face {
   font-family: "WS";
   src: url("./fonts/WS.otf");
+  
 }
 
 * {
@@ -11,13 +12,15 @@
 
 .hero {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+ 
 }
 
 .backGroundVideo {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  
 }
 
 .presentation {
@@ -30,7 +33,7 @@
   justify-content: center;
   align-items: center;
   color: #cc9544;
-  font-size: 400%;
+  font-size: 300%;
 }
 
 .direction {
